@@ -1,3 +1,7 @@
+"""
+linalg.py
+"""
+
 from .modarith import mod_q
 
 def dot(u: list[int], v: list[int], q: int) -> int:

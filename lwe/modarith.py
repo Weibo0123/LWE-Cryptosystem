@@ -1,3 +1,7 @@
+"""
+modarith.py
+"""
+
 def mod_q(x: int, q: int) -> int:
     return x % q
 
