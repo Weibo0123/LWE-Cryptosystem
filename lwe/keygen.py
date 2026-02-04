@@ -6,7 +6,7 @@ from .sample import sample_uniform_matrix, sample_uniform_vector, sample_error_v
 from .linalg import mat_vec
 from .modarith import mod_q
 
-def keygen(m: int ,n: int, q: int, err_set: list[int], rng) :
+def keygen(m: int ,n: int, q: int, err_set: list[int], rng) -> tuple[list[list[int]], list[int], list[int], list[int]]:
     A = sample_uniform_matrix(m, n, q, rng)
     s = sample_uniform_vector(n, q, rng)
     As = mat_vec(A, s, q)

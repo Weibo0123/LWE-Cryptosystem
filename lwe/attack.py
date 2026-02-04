@@ -1,12 +1,12 @@
 """
 attack.py
 """
-from modarith import mod_inv, to_signed
-from linalg import mat_vec
+from .modarith import mod_inv, to_signed
+from .linalg import mat_vec
 import itertools
 import random
 
-def l1_error(A: list[list[int]] , b: list[int], s: list[int], q: int):
+def l1_error(A: list[list[int]] , b: list[int], s: list[int], q: int) -> tuple[int, list[int]]:
     As = mat_vec(A, s, q)
     e = [to_signed(bi - ai, q) for bi, ai in zip(b, As)]
     return sum(abs(x) for x in e), e
