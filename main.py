@@ -80,7 +80,7 @@ def print_file(A, b, s, e, q, out):
         print("", file=f)
 
 def read_file():
-    for i in range(1, 6):
+    for i in range(1, 2):
         fname = f"./data/instance{i}.txt"
         print("=" * 60)
         print(fname)
