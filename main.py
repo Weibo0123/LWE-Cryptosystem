@@ -19,6 +19,9 @@ def parse_args():
     keygen_parser.add_argument("-s", "--seed", type=int, help="Random seed, default is 123")
     keygen_parser.add_argument("-o", "--output", type=str, help="Output file name")
 
+    encrpyt_parser = subparsers.add_parser("encrypt", help="Encrypt a message using the public key A")
+    encrpyt_parser.add_argument("-m", required=True, type=int, help="Number of rows in A")
+
     return parser.parse_args()
 
 def get_parameters():
