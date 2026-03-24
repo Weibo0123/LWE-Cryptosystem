@@ -2,8 +2,6 @@
 
 Learning With Errors (LWE) cryptosystem — a small educational codebase to generate keys, (attempt to) encrypt/decrypt a single bit, and experiment with a simple brute‑force style LWE attack. This repo also includes short math notes to make the notation approachable.
 
-If you are new to the symbols, start with the short notes in [docs/mathematical_conventions.md](docs/mathematical_conventions.md).
-
 ## Features
 - Key generation: sample public matrix `A`, secret vector `s`, error vector `e`, and compute `b = A s + e (mod q)`
 - Brute-force attack demo: try to recover `s` and `e` from `(A, b, q)` by solving many square sub‑instances and scoring the L1 error
